@@ -1,0 +1,19 @@
+1.Posicionarse en la carpeta de trabajo
+
+2.Descomprimir archivo "ExplainBiasMXPackage_1.0.tar.gz" en dicha carpeta
+
+3.Abrir entorno de R y establecer el directorio actual
+
+4.Ejecutar: 
+
+	install.packages("ExplainBiasMXPackage_1.0.tar.gz", repos = NULL, type = "source")
+
+5.Ejecutar:
+
+	library(ExplainBiasMXPackage)
+
+6.Ejecutar:
+
+	exe()
+
+7.Leer y seguir cuidadosamente las instrucciones del programa
