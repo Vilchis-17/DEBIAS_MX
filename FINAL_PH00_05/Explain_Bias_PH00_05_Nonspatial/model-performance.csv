@@ -1,5 +1,0 @@
-metric,train,test
-rmse,0.004,0.007
-pearson,0.986,0.885
-spearman,0.969,0.872
-standard_dev,0.001,0.001

@@ -1,0 +1,52 @@
+1.Posicionarse en la carpeta de trabajo
+
+2.Pegar el archivo "MeasureBias0.0_1.0.tar" en dicha carpeta
+
+3.Abrir entorno de R y establecer el directorio actual
+
+4.Ejecutar:
+
+# Define packages
+packages <- c(
+  "dplyr",
+  "sf",
+  "ggplot2",
+  "viridis",
+  "spdep",
+  "sysfonts",
+  "showtextdb",
+  "classInt",
+  "scales",
+  "forcats",
+  "spgwr",
+  "ggthemes",
+  "showtext",
+  "tmap",
+  "tidyverse",
+  "readr",
+  "magrittr",
+  "gridExtra",
+  "magick",
+  "patchwork"
+)
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+} 
+# Load packages
+invisible(lapply(packages, library, character.only = TRUE))
+
+5.Ejecutar: 
+
+	install.packages("MeasureBias0.0_1.0.tar.gz", repos = NULL, type = "source")
+
+6.Ejecutar:
+
+	library(MeasureBias0.0)
+
+7.Ejecutar:
+
+	exe()
+
+8.Leer y seguir cuidadosamente las instrucciones del programa
