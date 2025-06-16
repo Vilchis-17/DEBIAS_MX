@@ -1,59 +1,17 @@
-1.Posicionarse en la carpeta de trabajo
+1.Posicionarse en la carpeta donde esta el paquete
 
-2.Pegar el archivo "ExplainBias0.0_1.0.tar.gz" en dicha carpeta
+2.Ejecutar: 
+	
+	Abrir el proyecto
+	devtools::load_all()
 
-3.Abrir entorno de R y establecer el directorio actual
+	o
 
-4.Ejecutar:
+	install.packages("ExplainBiasV.0.0_1.0.tar.gz", repos = NULL, type = "source")
+	library(ExplainBiasV.0.0)
 
-# Define packages
-packages <- c(
-  "xgboost",
-  "parallel",
-  "recommenderlab",
-  "doParallel",
-  "rsample",
-  "tidyverse",
-  "sf",
-  "moments",
-  "SHAPforxgboost",
-  "shapviz",
-  "pdp",
-  "rsample",
-  "foreach",
-  "patchwork",
-  "viridis",
-  "scales",
-  "tidyplots",
-  "Ckmeans.1d.dp",
-  "vtreat",
-  "dplyr",
-  "ggplot2",
-  "readr",
-  "ggthemes",
-  "showtext",
-  "Metrics",
-  "caret",
-  "yardstick"
-)
-# Install packages not yet installed
-installed_packages <- packages %in% rownames(installed.packages())
-if (any(installed_packages == FALSE)) {
-  install.packages(packages[!installed_packages])
-} 
-# Load packages
-invisible(lapply(packages, library, character.only = TRUE))
-
-4.Ejecutar: 
-
-	install.packages("ExplainBias0.0_1.0.tar.gz", repos = NULL, type = "source")
-
-6.Ejecutar:
-
-	library(ExplainBias0.0)
-
-7.Ejecutar:
+3.Ejecutar:
 
 	exe()
 
-8.Leer y seguir cuidadosamente las instrucciones del programa
+4.Leer y seguir cuidadosamente las instrucciones del programa
