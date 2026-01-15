@@ -78,7 +78,7 @@ source("./style/data-visualisation_theme.R")
 # Set weights scheme: nonspatial,queen, fbw, knn, db
 w_schemes <- c("queen", "fbw", "knn", "db")
 # Folder where the outputs will be saved
-Outputs <- "Measure_Bias_Fb_Stt"
+Outputs <- "Measure_Bias_Mp_00_05"
 # Assign number of classes or divisions for plots
 num_classes <- 8
 ```
@@ -137,7 +137,7 @@ print(dim(Boundaries))
 ### 2.3.Active population
 
 ```{r}
-Active_population <- read.csv("Inputs/Active_population_fb_stt.csv", fileEncoding = "latin1") 
+Active_population <- read.csv("Inputs/Active_population_phone_00_05.csv", fileEncoding = "latin1") 
 colnames(Active_population)[1] <- "Area_code"
 colnames(Active_population)[2] <- "Area_name"
 colnames(Active_population)[3] <- "Total_active_population"
